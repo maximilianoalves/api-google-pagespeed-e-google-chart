@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Código feito por Maximiliano alves da Cruz.-->
+	<title>Utilizando a api do Google PageSpeed e Google Chart</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link href="http://fonts.googleapis.com/css?family=Raleway:500,400,300" rel="stylesheet" type="text/css">
+	<link href='css/style.css' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/contentjs.js"></script>
+	<script type="text/javascript">
+	
+	</script>
+</head>
+<body id="home">
+<section id="url_full"> 
+	<h1>Utilizando a api do Google PageSpeed e Google Chart</h1>
+</br>
+</br>
+	URL: <input type="url" name="url" id="url" placeholder="Informa a url para analise">   <button onclick="pegarDados()"><img src="img/search.png" width="32px" height="32px" alt= "Analisar" title= "Analisar"></img></button>
+</section>
+</br>
+<section>
+    <div id="resultadoHeader"></div>
+	<span id="urlM"></span><br/>
+	<span id="responseCode"></span><br/>
+	<span id="title"></span><br/>
+	<span id="ruleGroupsSPEED"></span><br/>
+	<span id="notOptimized"></span><br/>
+
+</section>
+</br>
+</br>
+<section>
+	<button onclick="desenhaGrafico()"><div id="pad">Gerar Gráfico</div></button>
+	<div id = "chart_div"></div>
+</section>
+</body>
+</html>
+	
